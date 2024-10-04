@@ -1,14 +1,9 @@
 {
   "name": "@repo/ui",
   "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
   "private": true,
-  "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx",
-    "./shadcn/button": "./src/shadcn/button.tsx",
-    "./shadcn/drawer": "./src/shadcn/drawer.tsx"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
@@ -16,6 +11,7 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "repo/tailwind-config": "*",
     "@turbo/gen": "^1.12.4",
     "@types/eslint": "^8.56.5",
     "@types/node": "^20.11.24",
